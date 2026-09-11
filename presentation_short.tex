@@ -4,7 +4,8 @@
 %============================ TODO: UPDATE =====================================
 % - Update the following dates, links
 % - Update Sommerfest/Weunachtsfeier on page 3
-% - Update fsi/fsk themes (footer, logo p1, location p8, qr p9)
+% - Update fsi/fsk themes (footer, logo p1, location p9, qr p10)
+% - Update Erstigruppen QR-Codes (p7)
 % - (Update 'pictures/erstiheft.pdf')
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \newcommand{\semester}{         WiSe 26/27}
@@ -324,7 +325,7 @@
 			\item {\large\faHiking} Wanderung  \dateWanderung
 			\item {\large\faBeer} Kneipentour  \dateKneipentour
 			\item {\large\faUtensils} Grillen  \dateGrillen
-			\item {\large\faRoute} Stadtrallye \dateStadtrallye
+			\item {\large\faMap} Stadtrallye \dateStadtrallye
 			% \item {\large\faMapMarker} Abenteuer Schnitzel-Jagd \dateAbenteuerSchnitzeljagd
 			%\item {\large\faFilm} Filmabend    \dateFilmabend
 			% \item {\large\faBeer} Kastenlauf   \dateKastenlauf
@@ -348,30 +349,35 @@
 
 
 %-------------------------------------------------------------------------------
-%   Erstigruppen (Work in progress)
+%   Erstigruppen
+%   => unfortunately the qr-code is hardcoded because of the '#' in a signal link,
+%	   which interferes with the latex syntax, '\qrcode' and '\url'
 %-------------------------------------------------------------------------------
 
-% \section{Bachelor Ersti-Gruppen}
-% \begin{frame}{\insertsection}
-% 	\begin{columns}
-% 		\column{.3\textwidth}
-% 		\textcolor{fsiblue}{\qrcode[height=.5\textheight]{}
-% 			\\[1em]
-% 			\url{}}
+\section{Bachelor Ersti-Gruppen}
+\begin{frame}{\insertsection}
+	\begin{columns}
+		\column{.3\textwidth}
+		\centering
+		\textcolor{fsiblue}{\includegraphics[width=4.5cm]{pictures/qr-gruppe-info.png}
+			\\[1em]
+			\text{*-Informatik}}
+			% \url{https://signal.group/#CjQKIBLZvMV75ifvTGG_lyhAHPVtlq3CTLZ6DYeLSuBirhL5EhD59M8ZZaM-7_r_7EI_ym9Q}}
 
-% 		\column{.4\textwidth}
-% 		\centering
-% 		\includegraphics[height=0.8\textheight]{pictures/fsi_ducky.pdf}
+		\column{.4\textwidth}
+		\centering
+		\includegraphics[height=0.65\textheight]{pictures/fsi_ducky.png}
 
-% 		\column{.3\textwidth}
-% 		\centering
-% 		\textcolor{fskgreen}{\qrcode[height=.5\textheight]{}
-% 			\\[1em]
-% 			\url{}}
+		\column{.3\textwidth}
+		\centering
+		\textcolor{fskgreen}{\includegraphics[width=4.5cm]{pictures/qr-gruppe-kogni.png}
+			\\[1em]
+			\text{Kognitionswissenschaft}}
+			% \url{https://chat.whatsapp.com/Iji6OXe67vI1E5a58oh39D}}
 
 
-% 	\end{columns}
-% \end{frame}
+	\end{columns}
+\end{frame}
 
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 \subsection{Sonstiges}
@@ -439,6 +445,7 @@
 \begin{frame}{\insertsection}
 	\begin{columns}
 		\column{.3\textwidth}
+		\centering
 		\textcolor{fsiblue}{\qrcode[height=.5\textheight]{\linkWebsiteInfo}
 			\\[1em]
 			\url{\linkWebsiteInfo}}
