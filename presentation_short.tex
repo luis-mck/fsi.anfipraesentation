@@ -34,6 +34,8 @@
 \newcommand{\linkErsti}{https://www.fsi.uni-tuebingen.de/du-bist-ersti/}
 \newcommand{\linkAnmeldung}{https://eei.fsi.uni-tuebingen.de/}
 \newcommand{\linkErstiheft}{https://teri.fsi.uni-tuebingen.de/anfiheft/}
+\newcommand{\linkGruppeInfo}{https://signal.group/\#CjQKIBLZvMV75ifvTGG_lyhAHPVtlq3CTLZ6DYeLSuBirhL5EhD59M8ZZaM-7_r_7EI_ym9Q}
+\newcommand{\linkGruppeKogni}{https://chat.whatsapp.com/Iji6OXe67vI1E5a58oh39D}
 \newcommand{\linkDiscord}{https://discord.gg/d4X2WjHWmQ}
 \newcommand{\linkPresentation}{https://github.com/fsi-tue/anfipraesentation/releases}
 \newcommand{\linkWebsiteInfo}{https://www.fsi.uni-tuebingen.de}
@@ -69,6 +71,7 @@
 \PassOptionsToPackage{hyphens}{url}
 \usepackage{hyperref}
 \usepackage{url}
+\usepackage{xurl}
 \usepackage{qrcode}
 \usepackage{eurosym}
 
@@ -359,10 +362,12 @@
 	\begin{columns}
 		\column{.3\textwidth}
 		\centering
-		\textcolor{fsiblue}{\includegraphics[width=4.5cm]{pictures/qr-gruppe-info.png}
+		\textcolor{fsiblue}{
+			\qrcode[height=.9\linewidth]{\linkGruppeInfo}
 			\\[1em]
-			\text{*-Informatik}}
-			% \url{https://signal.group/#CjQKIBLZvMV75ifvTGG_lyhAHPVtlq3CTLZ6DYeLSuBirhL5EhD59M8ZZaM-7_r_7EI_ym9Q}}
+			\footnotesize\textbf{*-Informatik}
+			\\[0.5em]
+			\footnotesize\url{\linkGruppeInfo}}
 
 		\column{.4\textwidth}
 		\centering
@@ -370,10 +375,14 @@
 
 		\column{.3\textwidth}
 		\centering
-		\textcolor{fskgreen}{\includegraphics[width=4.5cm]{pictures/qr-gruppe-kogni.png}
+		\textcolor{fskgreen}{
+			\qrcode[height=.9\linewidth]{\linkGruppeKogni}
 			\\[1em]
-			\text{Kognitionswissenschaft}}
-			% \url{https://chat.whatsapp.com/Iji6OXe67vI1E5a58oh39D}}
+			\footnotesize\textbf{Kognitionswissenschaft}
+			\\[0.5em]
+			\footnotesize\url{\linkGruppeKogni}}
+			\newline\large
+			\newline\large
 
 
 	\end{columns}
